@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+xhost +local:docker &>/dev/null
+
+docker run \
+  --rm=true \
+  --shm-size=256m \
+  --volume /tmp/.X11-unix:/tmp/.X11-unix:ro \
+  --volume "$HOME/.gtkrc-2.0":/home/arch/.gtkrc-2.0:ro \
+  --volume "$HOME/.atom":/home/arch/.atom:rw \
+  --env uid="$(id -u)" \
+  --env gid="$(id -g)" \
+  --env DISPLAY="unix$DISPLAY" \
+  --name atom \
+  local/atom \
+  --foreground \
+  &
