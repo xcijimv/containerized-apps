@@ -1,4 +1,4 @@
-# DEPRECATED: These Dockerfiles will be superseded with userspace runc images soon.
+# DEPRECATED: These Dockerfiles will be superseded with userspace runc configs.
 
 # Docker apps based from archlinux
 
