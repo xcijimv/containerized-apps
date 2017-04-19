@@ -1,3 +1,5 @@
+# DEPRECATED: These Dockerfiles will be superseded with userspace runc images soon.
+
 # Docker apps based from archlinux
 
 The Dockerfiles in this repository were ported from [jessfraz/dockerfiles](https://github.com/jessfraz/dockerfiles). Her Dockerfiles are based on other distros but she has a ton of them, so look there for additional apps.
